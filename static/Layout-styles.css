@@ -1,7 +1,8 @@
 header{
-    color: limegreen
+    background-color: rgb(157, 243, 157);
+    padding: 5px
 }
 
 footer{
-    color: silver
+    background-color: silver
 }
