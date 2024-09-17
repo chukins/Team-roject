@@ -4,9 +4,9 @@ conn = sqlite3.connect('database.db')
 c = conn.cursor()
 
 c.execute("""CREATE TABLE LoginDetails (
-          Username text Unique,
-          Email text Unique,
-          Password text
+          Username text UNIQUE,
+          Email text UNIQUE,
+          Password text NOT NULL
           )""")
 conn.commit()
 
