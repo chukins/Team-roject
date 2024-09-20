@@ -25,5 +25,14 @@ def login():
     return render_template('login.html')
     
 
+
+@app.route('/workplan')
+def workplan():
+    return render_template('WorkPlans.html')
+
+@app.route('/about', methods=['POST', 'GET'])
+def about():
+    return render_template('about.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

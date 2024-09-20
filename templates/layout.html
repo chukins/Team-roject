@@ -11,18 +11,18 @@
 
     <header>
         <div>
-            <img src="https://placehold.co/105">
+            <img id="logo1" src="{{url_for('static', filename=('logo.png'))}}">
         </div>
 
         <div class="navbar_middle">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">BMI Calculator</a>
-            <a href="#">Workout Plans</a>
+            <a href="{{url_for('index')}}">Home</a>
+            <a href="{{url_for('about')}}">About</a>
+            <a href="{{url_for('index')}}">BMI Calculator</a>
+            <a href="{{url_for('workplan')}}">Workout Plans</a>
         </div>
     
         <div class="Login_Signup">
-            <a id="Login and Sign Up" href="#">Log In and Sign Up</a>
+            <a id="Login and Sign Up" href="{{url_for('login')}}">Log In and Sign Up</a>
         </div>
     
     </header>
