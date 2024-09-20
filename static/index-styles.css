@@ -1,0 +1,23 @@
+main {
+    display: flex;
+}
+
+#left-main-border, #right-main-border {
+    width: 30%;
+    height: auto;
+}
+
+#main-content {
+    width: 40%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2  {
+    text-align: center;
+    padding: 20px 100px;
+    background-color: rgb(126,221,126);
+    border: 6px solid black
+}

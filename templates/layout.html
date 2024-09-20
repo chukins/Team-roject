@@ -5,9 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static', filename='Layout-styles.css')}}">
     <title>ToKa Fitness</title>
+
 </head>
 <body>
-    <header><p id="headP"><a href="{{url_for('index')}}">ToKa Fitness</a></p></header>
+
+    <header>
+        <div>
+            <img src="https://placehold.co/105">
+        </div>
+
+        <div class="navbar_middle">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">BMI Calculator</a>
+            <a href="#">Workout Plans</a>
+        </div>
+    
+        <div class="Login_Signup">
+            <a id="Login and Sign Up" href="#">Log In and Sign Up</a>
+        </div>
+    
+    </header>
     {% block body %}{% endblock %}
     <footer><p id="footP">© 2055 ToKa Fitness</p></footer>
 </body>

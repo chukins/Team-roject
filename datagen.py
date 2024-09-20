@@ -5,7 +5,6 @@ c = conn.cursor()
 
 c.execute("""CREATE TABLE LoginDetails (
           Username text UNIQUE,
-          Email text UNIQUE,
           Password text NOT NULL
           )""")
 conn.commit()

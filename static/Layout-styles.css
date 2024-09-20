@@ -1,7 +1,10 @@
-header{
-    background-image: linear-gradient(to left, rgb(126, 221, 126), rgb(27, 155, 27));
-    padding: 5px
+* {
+    box-sizing: border-box;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    font-weight: lighter;
 }
+
 body, html{
     margin: 0;
     height: 100%;
@@ -26,3 +29,44 @@ footer{
     margin:0;
     padding: 3px
 }
+
+
+
+header {
+    background-image: linear-gradient(to right, rgb(126,221,126), rgb(27,155,27));
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_middle {
+text-align: center;
+display: flex;
+width: 500px;
+justify-content: space-evenly;
+}
+
+
+
+a:hover {
+    color: #696969;
+}
+
+
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.Login_Signup {
+    text-align: right;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    transition: 1s ease-in-out;
+}
+
