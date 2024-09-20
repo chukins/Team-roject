@@ -1,3 +1,82 @@
 {% extends "layout.html" %}
 
 {% block body %}
+
+
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='bmi-styles.css')}}">
+</head>
+
+<body>
+    <main>
+        <script src="{{url_for('static', filename='bmi-scripts.js')}}"></script>
+        <!--<div id="calc-container">
+            <div id="kg-calc">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>0</button>
+                <button class="dot">.</button>
+                <button>Back</button>
+                <button>Clear</button>
+                <button>Enter</button>
+            </div>
+            <div id="height-calc">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>0</button>
+                <button class="dot">.</button>
+                <button>Back</button>
+                <button>Clear</button>
+                <button>Enter</button>
+            </div>
+        </div> calculator -->
+        <div></div>
+        <div>
+            <h1>BMI Calculator</h1>
+            <p>This is a calculator used to work out your BMI. <strong>Please keep in mind that BMI is a bad way of measuring health and does not take variables like muscle into account. You may appear as obese even if you are healthy if you have a lot of muscle.</strong></p>
+
+            <div id="bmi-container">
+
+            </div>
+        </div>
+        <div></div>
+    </main>
+</body>
+
+{% endblock %}
+
+<!--
+
+<div>
+    <div>
+        <img src="" alt="">
+    </div>
+    <nav>
+
+    </nav>
+    <div>
+        login signup
+    </div>
+</div>
+
+<body>
+    <header></header>
+    <main>
+        <nav></nav>
+    </main>
+    <footer></footer>
+</body>
