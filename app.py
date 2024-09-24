@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template
 import sqlite3
-
+import hashlib
 
 app = Flask(__name__)
 
@@ -13,13 +13,14 @@ def login():
     if request.method == 'POST':
         username = request.form.get('username')
         password = request.form.get('password')
-        print(username, password)
+        hashed = hashlib.md5(password.encode())
+        print(hashed.hexdigest())
         conn = sqlite3.connect('database.db')
         c = conn.cursor()
         c.execute('''
             INSERT INTO LoginDetails (Username, Password)
             VALUES (?, ?)
-            ''', (username, password))
+            ''', (username, hashed.hexdigest()))
         conn.commit()
         conn.close()
     return render_template('login.html')
