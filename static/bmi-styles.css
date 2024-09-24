@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: fit-content;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h1 + p {
+    font-size: x-large;
+}
+
+html, body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+}
+
+#bmi-container {
+    width: 100%;
+    height: 50vh;
+    background-color: lightblue;
+    border: 4px solid black
+}
+
+/*
+#kg-calc, #height-calc {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    z-index: 1;
+}
+
+#kg-calc > button, #height-calc > button {
+    border-radius: 0px;
+    padding: 20px 14px;
+}
+
+#height-calc {
+    margin-left: 25%;
+}
+
+#kg-calc {
+    margin-right: 25%;
+}
+
+#calc-container * {
+    font-size: xx-large;
+}
+
+
+
+#calc-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    width: 70%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+*/
