@@ -39,6 +39,11 @@ body {
     border: 4px solid black
 }
 
+#weight, #height {
+    width:250px;
+    margin:2px;
+}
+
 /*
 #kg-calc, #height-calc {
     display: grid;

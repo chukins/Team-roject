@@ -51,7 +51,13 @@ def about():
 
 @app.route('/bmi', methods=['POST', 'GET'])
 def bmi():
+    if request.method == 'POST':
+        height = request.form.get('height')
+        weight = request.form.get('weight')
+        bmi = round(float(weight) / (float(height*height)), 2)
+        return render_template('bmi.html', bmi=bmi)
     return render_template('bmi.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

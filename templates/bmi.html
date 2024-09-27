@@ -50,7 +50,13 @@
             <p>This is a calculator used to work out your BMI. <strong>Please keep in mind that BMI is a bad way of measuring health and does not take variables like muscle into account. You may appear as obese even if you are healthy if you have a lot of muscle.</strong></p>
 
             <div id="bmi-container">
-
+                <form>
+                    <input id="weight" type="text" placeholder="please enter your Weight (Kg)"/>
+                    <br>
+                    <input id="height" type="text" placeholder="please enter your Height (m)"/>
+                    <button type="submit">Submit</button>
+                </form>
+                <p>Your BMI index is {{bmi}}</p>
             </div>
         </div>
         <div></div>
