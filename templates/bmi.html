@@ -9,54 +9,16 @@
 
 <body>
     <main>
-        <script src="{{url_for('static', filename='bmi-scripts.js')}}"></script>
-        <!--<div id="calc-container">
-            <div id="kg-calc">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>0</button>
-                <button class="dot">.</button>
-                <button>Back</button>
-                <button>Clear</button>
-                <button>Enter</button>
-            </div>
-            <div id="height-calc">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>0</button>
-                <button class="dot">.</button>
-                <button>Back</button>
-                <button>Clear</button>
-                <button>Enter</button>
-            </div>
-        </div> calculator -->
+        <script defer src="{{url_for('static', filename='bmi-scripts.js')}}"></script>
         <div></div>
         <div>
             <h1>BMI Calculator</h1>
             <p>This is a calculator used to work out your BMI. <strong>Please keep in mind that BMI is a bad way of measuring health and does not take variables like muscle into account. You may appear as obese even if you are healthy if you have a lot of muscle.</strong></p>
 
             <div id="bmi-container">
-                <form>
-                    <input id="weight" type="text" placeholder="please enter your Weight (Kg)"/>
-                    <br>
-                    <input id="height" type="text" placeholder="please enter your Height (m)"/>
-                    <button type="submit">Submit</button>
-                </form>
-                <p>Your BMI index is {{bmi}}</p>
+                <p>Enter your height in cm: </p><input id="height-entry" type="number" value=""></input>
+                <p>Enter your weight in kg: </p><input id="weight-entry" type="number" value=""></input>
+                <p id="display-bmi">Your BMI index is: 0</p>
             </div>
         </div>
         <div></div>
